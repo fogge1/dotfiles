@@ -4,7 +4,12 @@ DOTFILES="$HOME/dotfiles"
 
 git -C "$DOTFILES" submodule update --init --recursive
 
+mkdir -p ~/.config
+
 # link zsh conf
 ln -sf $DOTFILES/zsh/.zshrc ~/.zshrc
+
+# nvim
+ln -sf $DOTFILES/nvim ~/.config/nvim 
 
 echo "done."
