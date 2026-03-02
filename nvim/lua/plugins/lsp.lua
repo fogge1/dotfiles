@@ -15,6 +15,9 @@ return {
         ensure_installed = {
           "clangd",  -- C++
           "pyright", -- Python
+	  "rust_analyzer",
+	  "ts_ls",
+	  "jdtls",
         },
         automatic_installation = true,
       })
@@ -48,7 +51,10 @@ return {
 
       vim.lsp.config("clangd", { on_attach = on_attach, capabilities = require("cmp_nvim_lsp").default_capabilities(), })
       vim.lsp.config("pyright", { on_attach = on_attach, capabilities = require("cmp_nvim_lsp").default_capabilities(), })
-
+      vim.lsp.config("rust_analyzer", { on_attach = on_attach, capabilities = require("cmp_nvim_lsp").default_capabilities(), })
+      vim.lsp.config("ts_ls", { on_attach = on_attach, capabilities = require("cmp_nvim_lsp").default_capabilities(), })
+      vim.lsp.config("jdtls", { on_attach = on_attach, capabilities = require("cmp_nvim_lsp").default_capabilities(), })
+      
     end,
   },
 }
