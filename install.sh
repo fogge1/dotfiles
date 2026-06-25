@@ -16,4 +16,6 @@ ln -sf $DOTFILES/nvim ~/.config/nvim
 mkdir -p "$HOME/.config/alacritty"
 ln -sf "$DOTFILES/alacritty/alacritty.toml" "$HOME/.config/alacritty/alacritty.toml"
 
+ln -sf "$DOTFILES/hypr" "$HOME/.config/hypr"
+
 echo "done."
