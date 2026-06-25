@@ -53,3 +53,4 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 
 
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("wofi --show drun")) 
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("pidof hyprlock || hyprlock"))
