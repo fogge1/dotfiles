@@ -1,15 +1,13 @@
 # Dotfiles 
 
+## Prerequisites
+
+- Install hyprland
+- Install zsh
+- Install alacritty
+- Install neovim
+
 ## Installation
-
-### Fedora:
-
-Install zsh:
-
-```
-sudo dnf install zsh
-chsh -s $(which zsh)
-```
 
 Clone the repo:
 ```bash
@@ -21,3 +19,7 @@ cd dotfiles
 ./install.sh
 source ~/.zshrc
 ```
+
+## TODO:
+
+- [ ] Fix automatic install of packages
