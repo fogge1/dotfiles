@@ -12,10 +12,4 @@ ln -sf $DOTFILES/zsh/.zshrc ~/.zshrc
 # nvim
 ln -sf $DOTFILES/nvim ~/.config/nvim 
 
-# alacritty
-mkdir -p "$HOME/.config/alacritty"
-ln -sf "$DOTFILES/alacritty/alacritty.toml" "$HOME/.config/alacritty/alacritty.toml"
-
-ln -sf "$DOTFILES/hypr" "$HOME/.config/hypr"
-
 echo "done."
