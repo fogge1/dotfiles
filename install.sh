@@ -6,6 +6,8 @@ brew bundle --file=
 
 git -C "$DOTFILES" submodule update --init --recursive
 
+brew bundle --file="$DOTFILES/Brewfile"
+
 mkdir -p ~/.config
 
 link() {
